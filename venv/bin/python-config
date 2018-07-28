@@ -1,4 +1,4 @@
-#!/home/fantaso/projects/WebSite/venv/bin/python
+#!/Users/tkhk/code/tkhkokd/solarvibes_website/venv/bin/python
 
 import sys
 import getopt
