@@ -1,1 +1,1 @@
-web: gunicorn solarvibes_website:app
+web: gunicorn solarvibes:app
