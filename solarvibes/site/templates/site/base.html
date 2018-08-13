@@ -81,8 +81,9 @@
 	      <h1 id="fh5co-logo"><a href="{{ url_for('site.index') }}"><img src="{{ url_for('site.static', filename='images/logo.png') }}" alt="Free HTML5 Bootstrap Website Template"></a></h1>
 	      <nav id="fh5co-main-menu" role="navigation">
 	        <ul>
-	          <li class="{% block web_index_active %}{% endblock %}"><a href="{{ url_for('site.index') }}">About Us</a></li>
-	          <li class="{% block web_agrimodule_active %}{% endblock %}"><a href="{{ url_for('site.agrimodule') }}">Our Solution</a></li>
+	          <li class="{% block web_agrimodule_active %}{% endblock %}"><a href="{{ url_for('site.agrimodule') }}">Home</a></li>
+            <li class="{% block web_index_active %}{% endblock %}"><a href="{{ url_for('site.index') }}">About Us</a></li>
+            <li><a href="https://medium.com/@Solarvibes" target="_blank">Adopt a Farmer</a></li>
 	          <li><a href="https://medium.com/@Solarvibes" target="_blank">Blog</a></li>
 	          <li class="{% block web_contact_active %}{% endblock %}"><a href="{{ url_for('site.contact') }}">Join Us</a></li>
 	        </ul>

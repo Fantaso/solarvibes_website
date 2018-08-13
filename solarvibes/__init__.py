@@ -18,8 +18,6 @@ db = SQLAlchemy(app)                                # create database connection
 # End Import Models
 #############################
 
-
-
 #############################
 # Begin Import Views
 #############################
