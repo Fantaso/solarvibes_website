@@ -1,0 +1,39 @@
+{% extends 'site/base.html' %}
+{% from "site/_renderfield.html" import render_field, render_field_with_errors %}
+
+{% block title %}
+	AgTech
+{% endblock %}
+
+{% block web_index_active %}
+fh5co-active
+{% endblock %}
+
+{% block content %}
+<div id="fh5co-main">
+
+	<!-- begin new -->
+  <div style="height: 30vh; text-align: center;">
+    <img src="{{ url_for('site.static', filename='images/sb_logo.jpg') }}" alt="solarvibes logo" style="display:block; margin:auto; margin-top: 7vh;">
+    <h1 style="color: grey;">Start Farming Smart</h1>
+  </div>
+
+    <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft">
+      <h2 class="fh5co-heading">What's adopt a farmer?</span></h2>
+      <p>Adopt A Farmer campaign is an initiative from Solarvibes to provide precision farming technologies, adequate tools and access to right information to small farmers in India and Africa. This is done with an aim of educating and helping farmers overcome existing challenges in farm operations and supply chain. We believe we can make farming very attractive for the next generation youngsters and add it to their profession wishlist along with engineering, medicine and many others.</p>
+    </div>
+
+    <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft">
+      <img src="{{ url_for('site.static', filename='images/howitworks.png') }}" alt="how it works">
+    </div>
+
+    <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft">
+      <h2 class="fh5co-heading">How & where can I contribute?</span></h2>
+      <p>WE offer different packages to support: Starting from forming a group of 10 donors to adopt one farmer to adopting 500 farmers as an individual, we offer various packages.
+      Our First campaign on Katana crowdfunding campaign was very successful with contributors from over 12 countries supporting to Adopt 50 farmers. The execution of our first campaign will be completed by end of 2018. Exciting events, demonstrations and marketing for Adopt A Farmer campaign are coming up soon. We invite you to Join hands with us in this Revolutionary step!
+      </p>
+    </div>
+
+</div>
+
+{% endblock %}

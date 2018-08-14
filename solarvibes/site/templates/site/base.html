@@ -39,28 +39,8 @@
 	<!-- Modernizr JS -->
 	<script src="{{ url_for('site.static', filename='js/modernizr-2.6.2.min.js') }}"></script>
 
-	<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"> -->
-	<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
 	<style type="text/css">
-
-		/*.bg_y{background-color: yellow;}
-		.bg_b{background-color: blue;}
-		.bg_gr{background-color: gray;}
-		.bg_r{background-color: red;}
-		.bg_g{background-color: green;}
-		.bg_dgr{background-color: darkgray;}
-		.bg_lgr{background-color: lightgray;}
-		.centrado{text-align: center;}*/
-
 	</style>
-
 
 	</head>
 	<body>
@@ -83,7 +63,7 @@
 	        <ul>
 	          <li class="{% block web_agrimodule_active %}{% endblock %}"><a href="{{ url_for('site.agrimodule') }}">Home</a></li>
             <li class="{% block web_index_active %}{% endblock %}"><a href="{{ url_for('site.index') }}">About Us</a></li>
-            <li><a href="https://medium.com/@Solarvibes" target="_blank">Adopt a Farmer</a></li>
+            <li class="{% block web_adopt_active %}{% endblock %}"><a href="{{ url_for('site.adopt') }}">Adopt a Farmer</a></li>
 	          <li><a href="https://medium.com/@Solarvibes" target="_blank">Blog</a></li>
 	          <li class="{% block web_contact_active %}{% endblock %}"><a href="{{ url_for('site.contact') }}">Join Us</a></li>
 	        </ul>
@@ -106,15 +86,7 @@
 
 	{% endblock %}
 
-
 	</div>
-
-
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/paper/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>

@@ -39,8 +39,8 @@ def agrimodule():
     return render_template('site/agrimodule.html', form=form)
 
 
-@site.route('/platform', methods=['GET', 'POST'])
-def platform():
+@site.route('/adopt', methods=['GET', 'POST'])
+def adopt():
     form = EmailAndTextForm()
     if form.validate_on_submit():
         email = form.email.data
@@ -50,23 +50,8 @@ def platform():
         db.session.commit()
         form = None
         flash('Thanks. Your feedback is valuable to us!')
-        return redirect(url_for('site.platform'))
-    return render_template('site/platform.html', form=form)
-
-@site.route('/about', methods=['GET', 'POST'])
-def about():
-    form = EmailAndTextForm()
-    if form.validate_on_submit():
-        email = form.email.data
-        msg = form.msg.data
-        workwithusus = WorkWithUsTable(email=email, msg=msg)
-        db.session.add(workwithusus)
-        db.session.commit()
-        form = None
-        flash('Thanks. Our HR department will contact you!')
-        return redirect(url_for('site.about'))
-    return render_template('site/about.html', form=form)
-
+        return redirect(url_for('site.adopt'))
+    return render_template('site/adopt.html', form=form)
 
 @site.route('/contact', methods=['GET', 'POST'])
 def contact():
