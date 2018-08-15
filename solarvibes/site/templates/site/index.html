@@ -10,26 +10,20 @@ fh5co-active
 {% endblock %}
 
 {% block content %}
-<div id="fh5co-main">
 
+  <div id="fh5co-main">
 	<!-- begin new -->
-  <div style=" filter: brightness(100%); height: 70vh; text-align: center; background-image:url('{{ url_for('site.static', filename='images/lettuce.jpg') }}'); background-size: 100%;">
-    <br>
-    <br>
-    <img src="{{ url_for('site.static', filename='images/sb_logo.jpg') }}" alt="solarvibes logo" style="display:block; margin:auto; margin-top: 7vh;">
-    <br>
-<!--     <h1 style="color: white; text-shadow: 0 0 0.2em black;">Start Farming Smart</h1>
-    <h1 style="color: white; text-shadow: 0 0 0.2em black;">Say Goodbye to Crop Failures!</h1> -->
+    <div style=" filter: brightness(100%); height: 70vh; text-align: center; background-image:url('{{ url_for('site.static', filename='images/lettuce.jpg') }}'); background-size: 100%;">
+      <br>
+      <br>
+      <img src="{{ url_for('site.static', filename='images/sb_logo.jpg') }}" alt="solarvibes logo" style="display:block; margin:auto; margin-top: 7vh;">
+      <br>
 
-  <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft" style="color: white; text-shadow: 0 0 2.0em black; font-size: 22px; padding: 2em 0;">
-    <p>Solarvibes develops Agrimodule Smart System, a network of smart sensors driven by powerful AI based crop intelligence and farm management software to aid farmers across the globe with instant access to soil health, crop status and automate the farm to achieve high crop productivity and high profit margins. </p>
+    <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft" style="color: white; text-shadow: 0 0 2.0em black; font-size: 22px; padding: 2em 0;">
+      <p>Solarvibes develops Agrimodule Smart System, a network of smart sensors driven by powerful AI based crop intelligence and farm management software to aid farmers across the globe with instant access to soil health, crop status and automate the farm to achieve high crop productivity and high profit margins. </p>
+    </div>
+
   </div>
-
-    <!-- Only ICON LOGO -->
-    <!-- // BIGGER -->
-  </div>
-  <!-- BANNER -->
-
 
   <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft">
     <h2 class="fh5co-heading">What we do?</span></h2>
@@ -76,14 +70,14 @@ fh5co-active
 	            <h4>Co-Founder, CTO</h4>
 	          </div>
             <div class="col-md-3 fh5co-staff">
-              <img src="{{ url_for('site.static', filename='images/roshan.png') }}" alt="Free HTML5 Bootstrap Template" class="img-responsive">
-              <h3>Roshan Gore</h3>
-              <h4>Soil Expert</h4>
-            </div>
-            <div class="col-md-3 fh5co-staff">
               <img src="{{ url_for('site.static', filename='images/taka.png') }}" alt="Free HTML5 Bootstrap Template" class="img-responsive">
               <h3>Takahiko Okada</h3>
               <h4>Cloud & Backend Engineer</h4>
+            </div>
+            <div class="col-md-3 fh5co-staff">
+              <img src="{{ url_for('site.static', filename='images/roshan.png') }}" alt="Free HTML5 Bootstrap Template" class="img-responsive">
+              <h3>Roshan Gore</h3>
+              <h4>Soil Expert</h4>
             </div>
 	        </div>
 	      </div>
