@@ -35,11 +35,13 @@
 	<link rel="stylesheet" href="{{ url_for('site.static', filename='css/owl.theme.default.min.css') }}">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="{{ url_for('site.static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 	<!-- Modernizr JS -->
 	<script src="{{ url_for('site.static', filename='js/modernizr-2.6.2.min.js') }}"></script>
 
 	<style type="text/css">
+  .mySlides {display:none;}
 	</style>
 
 	</head>
@@ -65,12 +67,12 @@
             <li class="{% block web_index_active %}{% endblock %}"><a href="{{ url_for('site.index') }}">About Us</a></li>
             <li class="{% block web_adopt_active %}{% endblock %}"><a href="{{ url_for('site.adopt') }}">Adopt a Farmer</a></li>
 	          <li><a href="https://medium.com/@Solarvibes" target="_blank">Blog</a></li>
-	          <li class="{% block web_contact_active %}{% endblock %}"><a href="{{ url_for('site.contact') }}">Join Us</a></li>
+	          <li class="{% block web_contact_active %}{% endblock %}"><a href="{{ url_for('site.contact') }}">Contact Us</a></li>
 	        </ul>
 	      </nav>
 
 	      <div class="fh5co-footer">
-	        <p><small>&copy; 2018 Solarvibes<br> All Rights Reserved.</p>
+	        <p><small>&copy; 2018 Solarvibes<br>All Rights Reserved.</p>
 	        <ul>
 	          <li><a href="https://www.facebook.com/Solarvibesltd/" target="_blank"><i class="icon-facebook"></i></a></li>
 	          <li><a href="https://twitter.com/Solarvibes_Ltd?lang=en" target="_blank"><i class="icon-twitter"></i></a></li>
@@ -78,6 +80,8 @@
 	          <li><a href="http://www.linkedin.com/in/solarvibes-45633b13b" target="_blank"><i class="icon-linkedin"></i></a></li>
 	          <li><a href="https://www.youtube.com/channel/UCel0E93tcBZ1nrM3xMQs1SQ" target="_blank"><i class="icon-youtube"></i></a></li>
 	        </ul>
+          <br>
+          <a href="/web/impresum">Impresum</a>
 	      </div>
 
 	    </aside>
@@ -105,7 +109,7 @@
 	<!-- Counters -->
 	<script src="{{ url_for('site.static', filename='js/jquery.countTo.js') }}"></script>
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
 	<script src="{{ url_for('site.static', filename='js/google_map.js') }}"></script>
 	<!-- Banner -->
 	<script src="{{ url_for('site.static', filename='js/banner.js') }}"></script>

@@ -75,3 +75,8 @@ def contact():
         flash('Thanks. We will get back to your shortly!')
         return redirect(url_for('site.contact'))
     return render_template('site/contact.html', form=form)
+
+@site.route('/impresum', methods=['GET'])
+def impresum():
+    return render_template('site/impresum.html')
+

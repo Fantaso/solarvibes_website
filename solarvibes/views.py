@@ -1,7 +1,6 @@
 from flask import redirect, url_for
 from solarvibes import app
 
-
 #############################
 # SITE INDEX
 #############################

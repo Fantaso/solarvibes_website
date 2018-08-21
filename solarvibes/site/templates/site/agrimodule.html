@@ -17,21 +17,53 @@ fh5co-active
 <!-- Bigger Icons like Customer Benefits -->
 <!-- Change scalable and plug and play icons -->
 
+
 <!-- END BANNER -->
 <div class="cd-slider banner-text-color" style="height: 70vh; text-align: center; color: grey; font-size: 36px;">
   <div style="margin-top: 10%;">
     <img src="{{ url_for('site.static', filename='images/svlogo.png') }}" alt="solarvibes logo">
-    <p>Start Farming Smart<br>Say Goodbye to Crop Failures</p>
+    <p>Start Farming Smart</p>
   </div>
 </div>
 
 <div class="fh5co-narrow-content">
 	<div class="row">
 		<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-			<h1 style="width: 100vh; font-size: 45px;">Our Solution - Agrimodule</h1>
+			<h2 style="width: 100vh; font-size: 40px;">Our Solution - Agrimodule Smart System</h2>
+
 		</div>
 	</div>
 </div>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="{{ url_for('site.static', filename='images/agmo.png') }}" style="width:100%; height: 80vh;">
+  <img class="mySlides" src="{{ url_for('site.static', filename='images/mobile.png') }}" style="width:100%; height: 80vh;">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
 
 <div class="fh5co-narrow-content fh5co-border-bottom">
 	<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Agrimodule is</h2>
@@ -139,49 +171,50 @@ fh5co-active
 	<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Customer <span>Benefits</span></h2>
 	<div class="row">
 
-		<div class="col-md-6">
-			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-				<div class="fh5co-icon">
-					<img src="{{ url_for('site.static', filename='images/cb_cost.png') }}" alt="" class="img-responsive">
-				</div>
-				<div class="fh5co-text">
-					<h3>Reduce farming costs by efficient optimization of farm</h3>
-				</div>
-			</div>
-		</div>
 
-		<div class="col-md-6">
-			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-				<div class="fh5co-icon">
-					<img src="{{ url_for('site.static', filename='images/cb_failure.png') }}" alt="" class="img-responsive">
-				</div>
-				<div class="fh5co-text">
-					<h3>Powerful predictive modelling of diseases & defficiency</h3>
-				</div>
-			</div>
-		</div>
+    <div class="col-md-6">
+      <div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+        <div class="fh5co-icon">
+          <img src="{{ url_for('site.static', filename='images/cb_cost.png') }}" alt="" class="img-responsive">
+        </div>
+        <div class="fh5co-text">
+          <h3>Reduce farming costs by efficient optimization of farm</h3>
+        </div>
+      </div>
+    </div>
 
-		<div class="col-md-6">
-			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-				<div class="fh5co-icon">
-					<img src="{{ url_for('site.static', filename='images/cb_profit.png') }}" alt="" class="img-responsive">
-				</div>
-				<div class="fh5co-text">
-					<h3>Increases profits<br>massively</h3>
-				</div>
-			</div>
-		</div>
+    <div class="col-md-6">
+      <div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+        <div class="fh5co-icon">
+          <img src="{{ url_for('site.static', filename='images/cb_failure.png') }}" alt="" class="img-responsive">
+        </div>
+        <div class="fh5co-text">
+          <h3>Powerful predictive modelling of diseases & defficiency</h3>
+        </div>
+      </div>
+    </div>
 
-		<div class="col-md-6">
-			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-				<div class="fh5co-icon">
-					<img src="{{ url_for('site.static', filename='images/cb_quality.png') }}" alt="" class="img-responsive">
-				</div>
-				<div class="fh5co-text">
-					<h3>Increase crop productivity<br>& quality</h3>
-				</div>
-			</div>
-		</div>
+    <div class="col-md-6">
+      <div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+        <div class="fh5co-icon">
+          <img src="{{ url_for('site.static', filename='images/cb_profit.png') }}" alt="" class="img-responsive">
+        </div>
+        <div class="fh5co-text">
+          <h3>Increases profits massively</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+        <div class="fh5co-icon">
+          <img src="{{ url_for('site.static', filename='images/cb_quality.png') }}" alt="" class="img-responsive">
+        </div>
+        <div class="fh5co-text">
+          <h3>Increase crop productivity & quality</h3>
+        </div>
+      </div>
+    </div>
 
 	</div>
 </div>

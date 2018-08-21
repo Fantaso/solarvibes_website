@@ -41,6 +41,7 @@ a:hover, a:active, a:focus {
 
 p {
   margin-bottom: 1.5em;
+  font-size: 16px !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,8 +97,8 @@ figure {
   border: 0;
 }
 html {
-  font-size: 10px;
-  font-size: calc(5px + 0.4vw);
+  font-size: 16px;
+  font-size: calc(10px + 0.4vw);
 }
 /*body {
   font-family: 'Ubuntu', sans-serif;
