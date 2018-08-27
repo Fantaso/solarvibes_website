@@ -41,7 +41,7 @@ a:hover, a:active, a:focus {
 
 p {
   margin-bottom: 1.5em;
-  font-size: 16px !important;
+  font-size: 20px !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,7 +97,7 @@ figure {
   border: 0;
 }
 html {
-  font-size: 16px;
+  font-size: 20px;
   font-size: calc(10px + 0.4vw);
 }
 /*body {
@@ -420,11 +420,17 @@ nav > div > span {
 #fh5co-aside .fh5co-footer ul li a {
   color: rgba(0, 0, 0, 0.7);
   padding: 4px;
+  font-size: 24px !important;
 }
+
 #fh5co-aside .fh5co-footer ul li a:hover, #fh5co-aside .fh5co-footer ul li a:active, #fh5co-aside .fh5co-footer ul li a:focus {
   text-decoration: none;
   outline: none;
   color: #16B6A5;
+}
+
+i {
+  font-size: 24px;
 }
 
 #fh5co-main {
