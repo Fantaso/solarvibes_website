@@ -39,6 +39,10 @@ a:hover, a:active, a:focus {
   outline: none;
 }
 
+textarea.form-control {
+  height: 16px !important;
+}
+
 p {
   margin-bottom: 1.5em;
   font-size: 20px !important;

@@ -36,7 +36,7 @@ def agrimodule():
         landsize = form.landsize.data
         msg = form.msg.data
 
-        agrimodulefb = AgrimoduleFBTable(first_name=first_Name, last_name=last_name, email=email, country=country, landsize=landsize, msg=msg)
+        agrimodulefb = AgrimoduleFBTable(first_name=first_name, last_name=last_name, email=email, country=country, landsize=landsize, msg=msg)
         db.session.add(agrimodulefb)
         db.session.commit()
         form = None
