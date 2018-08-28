@@ -7,4 +7,4 @@ from solarvibes import app
 @app.route('/', methods=['GET'])
 # @login_required
 def site_index():
-    return redirect(url_for('site.index'))
+    return redirect(url_for('site.agrimodule'))
