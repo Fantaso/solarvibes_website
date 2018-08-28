@@ -40,7 +40,7 @@ a:hover, a:active, a:focus {
 }
 
 textarea.form-control {
-  height: 12px !important;
+  height: 32px !important;
 }
 
 p {
@@ -1198,8 +1198,8 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   box-shadow: none;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
-  height: 12px;
-  font-size: 18px;
+  height: 16px;
+  font-size: 16px;
   font-weight: 300;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
