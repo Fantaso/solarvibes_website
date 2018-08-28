@@ -40,7 +40,7 @@ a:hover, a:active, a:focus {
 }
 
 textarea.form-control {
-  height: 16px !important;
+  height: 12px !important;
 }
 
 p {
@@ -606,7 +606,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   background: #e6e6e6;
   background-size: cover;
   background-attachment: fixed;
-  /*height: auto;*/
+  height: auto;
 }
 .fh5co-counters .fh5co-counter {
   font-size: 50px;
@@ -1198,7 +1198,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   box-shadow: none;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
-  height: 54px;
+  height: 12px;
   font-size: 18px;
   font-weight: 300;
   -webkit-border-radius: 0px;

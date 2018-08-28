@@ -2109,7 +2109,7 @@ output {
 }
 
 textarea.form-control {
-  height: auto;
+  height: 12px !important;
 }
 
 input[type="search"] {
@@ -2263,7 +2263,7 @@ select.input-sm, .input-group-sm > select.form-control,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn {
   height: 30px;
-  line-height: 30px;
+  line-height: 24px;
 }
 
 textarea.input-sm, .input-group-sm > textarea.form-control,
@@ -2277,7 +2277,7 @@ select[multiple].input-sm,
 }
 
 .form-group-sm .form-control {
-  height: 30px;
+  height: 24px;
   padding: 5px 20px;
   font-size: 12px;
   line-height: 1.5;
@@ -2327,7 +2327,7 @@ select[multiple].input-lg,
 }
 
 .form-group-lg .form-control {
-  height: 46px;
+  height: 24px;
   padding: 10px 20px;
   font-size: 18px;
   line-height: 1.33333;
