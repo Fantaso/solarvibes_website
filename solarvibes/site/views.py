@@ -64,10 +64,12 @@ def contact():
     # pre_contact = PreContactUsForm('Carlos','carlos@sv.de','+176-55858585','I would like to get a quotation for my farm 1 hectare located in Berlin')
     form = ContactUsForm()
     if form.validate_on_submit():
+
         name = form.name.data
         email = form.email.data
         phone = form.phone.data
         msg = form.msg.data
+
         newsletter = ContactUsTable(name=name, email=email, phone=phone, msg=msg)
         db.session.add(newsletter)
         db.session.commit()
