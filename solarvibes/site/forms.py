@@ -12,7 +12,7 @@ class EmailAndTextForm(EmailForm):
   last_name = TextAreaField('Last Name', validators=[DataRequired(), Length(min=-1, max=30, message='Maximum characters: 30')])
   email = TextAreaField('Email', validators=[DataRequired(), Length(min=-1, max=50, message='Maximum characters: 50')])
   country = TextAreaField('Country', validators=[DataRequired(), Length(min=-1, max=50, message='Maximum characters: 50')])
-  landsize = TextAreaField('Landsize', validators=[DataRequired(), Length(min=-1, max=50, message='Maximum characters: 50')])
+  landsize = TextAreaField('Landsize(ha)', validators=[DataRequired(), Length(min=-1, max=50, message='Maximum characters: 50')])
   msg = TextAreaField('Message', validators=[DataRequired(), Length(min=-1, max=50, message='Maximum characters: 50')])
 
 class ContactUsForm(FlaskForm):
