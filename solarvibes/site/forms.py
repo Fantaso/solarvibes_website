@@ -15,6 +15,8 @@ class EmailAndTextForm(EmailForm):
   landsize = TextAreaField('Landsize', validators=[DataRequired(), Length(min=-1, max=50, message='Maximum characters: 50')])
   msg = TextAreaField('Message', validators=[DataRequired(), Length(min=-1, max=50, message='Maximum characters: 50')])
 
-class ContactUsForm(EmailAndTextForm):
-    name 	= StringField(label='Fullname', validators=[DataRequired(), Length(min=3, max=30, message=None)])
-    phone 	= StringField('Phone', validators=[DataRequired(), Length(min=7, max=30, message=None)])
+class ContactUsForm(FlaskForm):
+  name 	= StringField(label='Fullname', validators=[DataRequired(), Length(min=3, max=30, message=None)])
+  phone 	= StringField('Phone', validators=[DataRequired(), Length(min=7, max=30, message=None)])
+  email = TextAreaField('Email', validators=[DataRequired(), Length(min=-1, max=50, message='Maximum characters: 50')])
+  msg = TextAreaField('Message', validators=[DataRequired(), Length(min=-1, max=50, message='Maximum characters: 50')])
