@@ -67,8 +67,6 @@ def contact():
 
         name = form.name.data
         email = form.email.data
-        phone = form.phone.data
-        msg = form.msg.data
 
         newsletter = ContactUsTable(name=name, email=email)
         db.session.add(newsletter)
