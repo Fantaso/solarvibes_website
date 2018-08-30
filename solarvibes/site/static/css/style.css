@@ -12,12 +12,13 @@
 *	Edit this section
 *
 * ======================================================= */
+
 body {
   font-family: 'Ubuntu', sans-serif;
   /*font-family: "Roboto", Arial, sans-serif;*/
   font-weight: 300;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 2.0;
   color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 992px) {
@@ -455,7 +456,7 @@ i {
   }
 }
 #fh5co-main .fh5co-narrow-content {
-  position: relative;
+  height: 77vh !important;
   width: 80%;
   margin: 0 auto;
   padding: 4em 0;
@@ -805,6 +806,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 
 .fh5co-more-contact {
+  margin-top: 20% !important;
   background: #fafafa;
 }
 

@@ -73,17 +73,11 @@ In case of any questions. We will get back to you as soon as possible! </p>
 							 {{ render_field_with_errors(form.name, class="form-control") }}
 							</div>
 							<div class="form-group">
-								{{ render_field_with_errors(form.email, class="form-control") }}
-							</div>
-							<div class="form-group">
-								{{ render_field_with_errors(form.phone, class="form-control") }}
+							 {{ render_field_with_errors(form.email, class="form-control") }}
 							</div>
 						</div>
 
-						<div class="col-md-6">
-							<div class="form-group">
-								{{ render_field_with_errors(form.msg, class="form-control", cols="30", rows="5") }}
-							</div>
+						<div class="col-md-12">
 							<div class="form-group">
 								<input type="submit" class="btn btn-primary btn-md" value="Send">
 							</div>
