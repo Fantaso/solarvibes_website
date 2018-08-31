@@ -310,6 +310,7 @@ figure {
 }
 
 #fh5co-main {
+  height: 100% !important;
 	width: 85%;
 	float: right;
 	@include transition(.5s);
