@@ -1,4 +1,4 @@
-solarvibes/site/templates/site/* linguist-vendored
+solarvibes/site/templates/* linguist-vendored
 solarvibes/site/static/*
 
 https://github.com/alexkaratarakis/gitattributes/blob/master/.gitattributes
